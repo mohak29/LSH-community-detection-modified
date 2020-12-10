@@ -1,3 +1,6 @@
+# Generating .so file command
+gcc -shared -o libhello.so -fPIC minhash_numpy.c -I/usr/include/python2.7/ -lpython2.7
+
 # LSH-community-detection
 
 This is the code for our paper 'Real-Time Community Detection in Large Social Networks on a Laptop' https://arxiv.org/abs/1601.03958 Community detection for large networks on a single laptop. We use minhash signatures to encode the Jaccard similarity between neighbourhood graphs of vertices in social networks. A Locality Sensitive Hash table is built on top of the minhashes to perform extremely fast nearest neighbour search. The results of the nearest neighbour search are ranked and structured using the WALKTRAP community detection algorithm.
